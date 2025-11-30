@@ -1,0 +1,171 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C_KMHD_CODE: include/fortran_routines.hpp 源文件</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">C_KMHD_CODE<span id="projectnumber">&#160;V1.0</span>
+   </div>
+   <div id="projectbrief">C_KMHD_CODE is a library for the KMHD code.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(1); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('db/dfb/fortran__routines_8hpp_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">fortran_routines.hpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="../../db/dfb/fortran__routines_8hpp.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#pragma once</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span> </div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="../../d1/de7/fortran__io_8hpp.html">fortran_io.hpp</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;Eigen/Dense&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;type_traits&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment">// Overloads for different data types</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="foldopen" id="foldopen00015" data-start="{" data-end="}">
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="../../db/dfb/fortran__routines_8hpp.html#a53d5d939b0ea8340b77fbc003bf2e29f">   15</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../db/dfb/fortran__routines_8hpp.html#a53d5d939b0ea8340b77fbc003bf2e29f">write_to_fortran</a>(<span class="keywordtype">int</span> unit_number, <span class="keywordtype">int</span> value)</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>{</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_function" href="../../d6/d30/fortran__io_8f90.html#adb8fd6006710ad859bfd522cccc670ba">write_integer_c</a>(unit_number, value);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
+</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="../../db/dfb/fortran__routines_8hpp.html#affa482f8f9b0423a302cf3024ca5ea2c">   26</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../db/dfb/fortran__routines_8hpp.html#affa482f8f9b0423a302cf3024ca5ea2c">read_from_fortran</a>(<span class="keywordtype">int</span> unit_number, <span class="keywordtype">int</span> &amp;value)</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>{</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    <a class="code hl_function" href="../../d6/d30/fortran__io_8f90.html#af02439c5ca6dbf268bba0c0ed1159227">read_integer_c</a>(unit_number, &amp;value);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
+</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
+<div class="foldopen" id="foldopen00037" data-start="{" data-end="}">
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno"><a class="line" href="../../db/dfb/fortran__routines_8hpp.html#aea86d0d9cf755b8987e20ba68e45eba8">   37</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../db/dfb/fortran__routines_8hpp.html#a53d5d939b0ea8340b77fbc003bf2e29f">write_to_fortran</a>(<span class="keywordtype">int</span> unit_number, <span class="keywordtype">double</span> value)</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>{</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <a class="code hl_function" href="../../d6/d30/fortran__io_8f90.html#a2664da9e30b1e0eed838681dfed690fb">write_double_c</a>(unit_number, value);</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>}</div>
+</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span> </div>
+<div class="foldopen" id="foldopen00048" data-start="{" data-end="}">
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno"><a class="line" href="../../db/dfb/fortran__routines_8hpp.html#ad2ed6333f8c6246b85f6aedfbce50100">   48</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../db/dfb/fortran__routines_8hpp.html#affa482f8f9b0423a302cf3024ca5ea2c">read_from_fortran</a>(<span class="keywordtype">int</span> unit_number, <span class="keywordtype">double</span> &amp;value)</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>{</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_function" href="../../d6/d30/fortran__io_8f90.html#a714417199ea983ce278e4edd0f5dde00">read_double_c</a>(unit_number, &amp;value);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>}</div>
+</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived&gt;</div>
+<div class="foldopen" id="foldopen00060" data-start="{" data-end="}">
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno"><a class="line" href="../../db/dfb/fortran__routines_8hpp.html#af4664ed65c75244f8e68a7ed607414c5">   60</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../db/dfb/fortran__routines_8hpp.html#a53d5d939b0ea8340b77fbc003bf2e29f">write_to_fortran</a>(<span class="keywordtype">int</span> unit_number, <span class="keyword">const</span> Eigen::MatrixBase&lt;Derived&gt; &amp;mat)</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>{</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="../../d6/d30/fortran__io_8f90.html#a2617486c1dfdbe676bebde501b0c54c4">write_matrix_c</a>(unit_number, mat.derived().data(), mat.rows(), mat.cols());</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
+</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> Derived&gt;</div>
+<div class="foldopen" id="foldopen00072" data-start="{" data-end="}">
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno"><a class="line" href="../../db/dfb/fortran__routines_8hpp.html#a3a685a71a6fbcbc158c28b382aab77ae">   72</a></span><span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code hl_function" href="../../db/dfb/fortran__routines_8hpp.html#affa482f8f9b0423a302cf3024ca5ea2c">read_from_fortran</a>(<span class="keywordtype">int</span> unit_number, Eigen::MatrixBase&lt;Derived&gt; &amp;mat)</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>{</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    <a class="code hl_function" href="../../d6/d30/fortran__io_8f90.html#a25517faa4717c2ed3a7e72a80d44e4c8">read_matrix_c</a>(unit_number, mat.derived().data(), mat.rows(), mat.cols());</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+</div>
+<div class="ttc" id="afortran__io_8f90_html_a25517faa4717c2ed3a7e72a80d44e4c8"><div class="ttname"><a href="../../d6/d30/fortran__io_8f90.html#a25517faa4717c2ed3a7e72a80d44e4c8">read_matrix_c</a></div><div class="ttdeci">subroutine read_matrix_c(unit_number, data, rows, cols)</div><div class="ttdef"><b>Definition</b> fortran_io.f90:72</div></div>
+<div class="ttc" id="afortran__io_8f90_html_a2617486c1dfdbe676bebde501b0c54c4"><div class="ttname"><a href="../../d6/d30/fortran__io_8f90.html#a2617486c1dfdbe676bebde501b0c54c4">write_matrix_c</a></div><div class="ttdeci">subroutine write_matrix_c(unit_number, data, rows, cols)</div><div class="ttdef"><b>Definition</b> fortran_io.f90:59</div></div>
+<div class="ttc" id="afortran__io_8f90_html_a2664da9e30b1e0eed838681dfed690fb"><div class="ttname"><a href="../../d6/d30/fortran__io_8f90.html#a2664da9e30b1e0eed838681dfed690fb">write_double_c</a></div><div class="ttdeci">subroutine write_double_c(unit_number, value)</div><div class="ttdef"><b>Definition</b> fortran_io.f90:43</div></div>
+<div class="ttc" id="afortran__io_8f90_html_a714417199ea983ce278e4edd0f5dde00"><div class="ttname"><a href="../../d6/d30/fortran__io_8f90.html#a714417199ea983ce278e4edd0f5dde00">read_double_c</a></div><div class="ttdeci">subroutine read_double_c(unit_number, value)</div><div class="ttdef"><b>Definition</b> fortran_io.f90:51</div></div>
+<div class="ttc" id="afortran__io_8f90_html_adb8fd6006710ad859bfd522cccc670ba"><div class="ttname"><a href="../../d6/d30/fortran__io_8f90.html#adb8fd6006710ad859bfd522cccc670ba">write_integer_c</a></div><div class="ttdeci">subroutine write_integer_c(unit_number, value)</div><div class="ttdef"><b>Definition</b> fortran_io.f90:27</div></div>
+<div class="ttc" id="afortran__io_8f90_html_af02439c5ca6dbf268bba0c0ed1159227"><div class="ttname"><a href="../../d6/d30/fortran__io_8f90.html#af02439c5ca6dbf268bba0c0ed1159227">read_integer_c</a></div><div class="ttdeci">subroutine read_integer_c(unit_number, value)</div><div class="ttdef"><b>Definition</b> fortran_io.f90:35</div></div>
+<div class="ttc" id="afortran__io_8hpp_html"><div class="ttname"><a href="../../d1/de7/fortran__io_8hpp.html">fortran_io.hpp</a></div></div>
+<div class="ttc" id="afortran__routines_8hpp_html_a53d5d939b0ea8340b77fbc003bf2e29f"><div class="ttname"><a href="../../db/dfb/fortran__routines_8hpp.html#a53d5d939b0ea8340b77fbc003bf2e29f">write_to_fortran</a></div><div class="ttdeci">void write_to_fortran(int unit_number, int value)</div><div class="ttdoc">Write an integer value to a Fortran unit</div><div class="ttdef"><b>Definition</b> fortran_routines.hpp:15</div></div>
+<div class="ttc" id="afortran__routines_8hpp_html_affa482f8f9b0423a302cf3024ca5ea2c"><div class="ttname"><a href="../../db/dfb/fortran__routines_8hpp.html#affa482f8f9b0423a302cf3024ca5ea2c">read_from_fortran</a></div><div class="ttdeci">void read_from_fortran(int unit_number, int &amp;value)</div><div class="ttdoc">Read an integer value from a Fortran unit</div><div class="ttdef"><b>Definition</b> fortran_routines.hpp:26</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+    </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script>

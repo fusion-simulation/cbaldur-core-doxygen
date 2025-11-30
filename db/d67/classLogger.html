@@ -1,0 +1,393 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C_KMHD_CODE: Logger类 参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">C_KMHD_CODE<span id="projectnumber">&#160;V1.0</span>
+   </div>
+   <div id="projectbrief">C_KMHD_CODE is a library for the KMHD code.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('db/d67/classLogger.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-types">Public 类型</a> &#124;
+<a href="#pub-static-methods">静态 Public 成员函数</a> &#124;
+<a href="../../d4/d54/classLogger-members.html">所有成员列表</a>  </div>
+  <div class="headertitle"><div class="title">Logger类 参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="../../d6/da3/logger_8hpp_source.html">logger.hpp</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public 类型</h2></td></tr>
+<tr class="memitem:ad766a24576ea8b27ad9d5649cef46d8f" id="r_ad766a24576ea8b27ad9d5649cef46d8f"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8f">Level</a> { <a class="el" href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8faa603905470e2a5b8c13e96b579ef0dba">Debug</a> = 0
+, <a class="el" href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8fa4059b0251f66a18cb56f544728796875">Info</a> = 1
+, <a class="el" href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8fa56525ae64d370c0b448ac0d60710ef17">Warn</a> = 2
+, <a class="el" href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8fa902b0d55fddef6f8d651fe1035b7d4bd">Error</a> = 3
+ }</td></tr>
+<tr class="memdesc:ad766a24576ea8b27ad9d5649cef46d8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">日志级别  <a href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8f">更多...</a><br /></td></tr>
+<tr class="separator:ad766a24576ea8b27ad9d5649cef46d8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+静态 Public 成员函数</h2></td></tr>
+<tr class="memitem:a32a85566d09b6ddfd07a4c4ff02d5ac4" id="r_a32a85566d09b6ddfd07a4c4ff02d5ac4"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d67/classLogger.html#a32a85566d09b6ddfd07a4c4ff02d5ac4">init</a> (const std::string &amp;filename, <a class="el" href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8f">Level</a> level=<a class="el" href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8fa4059b0251f66a18cb56f544728796875">Level::Info</a>, bool also_stdout=true)</td></tr>
+<tr class="memdesc:a32a85566d09b6ddfd07a4c4ff02d5ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">初始化：指定文件名、最小输出级别、是否同时输出到 stdout  <br /></td></tr>
+<tr class="separator:a32a85566d09b6ddfd07a4c4ff02d5ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a57acd0f5576b2f784d3c42a6e99c230b" id="r_a57acd0f5576b2f784d3c42a6e99c230b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d67/classLogger.html#a57acd0f5576b2f784d3c42a6e99c230b">setLevel</a> (<a class="el" href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8f">Level</a> level)</td></tr>
+<tr class="memdesc:a57acd0f5576b2f784d3c42a6e99c230b"><td class="mdescLeft">&#160;</td><td class="mdescRight">改变最低输出级别  <br /></td></tr>
+<tr class="separator:a57acd0f5576b2f784d3c42a6e99c230b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39bd25f673c7c398446499a18fb5645a" id="r_a39bd25f673c7c398446499a18fb5645a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d67/classLogger.html#a39bd25f673c7c398446499a18fb5645a">info</a> (const std::string &amp;msg)</td></tr>
+<tr class="memdesc:a39bd25f673c7c398446499a18fb5645a"><td class="mdescLeft">&#160;</td><td class="mdescRight">单行 info 日志  <br /></td></tr>
+<tr class="separator:a39bd25f673c7c398446499a18fb5645a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e33d96090e7d6d3ee208fcd67c5f587" id="r_a6e33d96090e7d6d3ee208fcd67c5f587"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d67/classLogger.html#a6e33d96090e7d6d3ee208fcd67c5f587">debug</a> (const std::string &amp;msg)</td></tr>
+<tr class="memdesc:a6e33d96090e7d6d3ee208fcd67c5f587"><td class="mdescLeft">&#160;</td><td class="mdescRight">debug 日志（默认只有 level &lt;= Debug 才会输出）  <br /></td></tr>
+<tr class="separator:a6e33d96090e7d6d3ee208fcd67c5f587"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173c0d18abc45e27fad414054dfc5f5f" id="r_a173c0d18abc45e27fad414054dfc5f5f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d67/classLogger.html#a173c0d18abc45e27fad414054dfc5f5f">warn</a> (const std::string &amp;msg)</td></tr>
+<tr class="memdesc:a173c0d18abc45e27fad414054dfc5f5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">warning 日志  <br /></td></tr>
+<tr class="separator:a173c0d18abc45e27fad414054dfc5f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117364e1794475deb0bbdfdfeb574007" id="r_a117364e1794475deb0bbdfdfeb574007"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d67/classLogger.html#a117364e1794475deb0bbdfdfeb574007">error</a> (const std::string &amp;msg)</td></tr>
+<tr class="memdesc:a117364e1794475deb0bbdfdfeb574007"><td class="mdescLeft">&#160;</td><td class="mdescRight">error 日志  <br /></td></tr>
+<tr class="separator:a117364e1794475deb0bbdfdfeb574007"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa35850b113ca87a126dd0b1a0d5c9b0a" id="r_aa35850b113ca87a126dd0b1a0d5c9b0a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d67/classLogger.html#aa35850b113ca87a126dd0b1a0d5c9b0a">flush</a> ()</td></tr>
+<tr class="memdesc:aa35850b113ca87a126dd0b1a0d5c9b0a"><td class="mdescLeft">&#160;</td><td class="mdescRight">手动 flush  <br /></td></tr>
+<tr class="separator:aa35850b113ca87a126dd0b1a0d5c9b0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">成员枚举类型说明</h2>
+<a id="ad766a24576ea8b27ad9d5649cef46d8f" name="ad766a24576ea8b27ad9d5649cef46d8f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad766a24576ea8b27ad9d5649cef46d8f">&#9670;&#160;</a></span>Level</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8f">Logger::Level</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>日志级别 </p>
+<table class="fieldtable">
+<tr><th colspan="2">枚举值</th></tr><tr><td class="fieldname"><a id="ad766a24576ea8b27ad9d5649cef46d8faa603905470e2a5b8c13e96b579ef0dba" name="ad766a24576ea8b27ad9d5649cef46d8faa603905470e2a5b8c13e96b579ef0dba"></a>Debug&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad766a24576ea8b27ad9d5649cef46d8fa4059b0251f66a18cb56f544728796875" name="ad766a24576ea8b27ad9d5649cef46d8fa4059b0251f66a18cb56f544728796875"></a>Info&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad766a24576ea8b27ad9d5649cef46d8fa56525ae64d370c0b448ac0d60710ef17" name="ad766a24576ea8b27ad9d5649cef46d8fa56525ae64d370c0b448ac0d60710ef17"></a>Warn&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ad766a24576ea8b27ad9d5649cef46d8fa902b0d55fddef6f8d651fe1035b7d4bd" name="ad766a24576ea8b27ad9d5649cef46d8fa902b0d55fddef6f8d651fe1035b7d4bd"></a>Error&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">成员函数说明</h2>
+<a id="a6e33d96090e7d6d3ee208fcd67c5f587" name="a6e33d96090e7d6d3ee208fcd67c5f587"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e33d96090e7d6d3ee208fcd67c5f587">&#9670;&#160;</a></span>debug()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Logger::debug </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>debug 日志（默认只有 level &lt;= Debug 才会输出） </p>
+
+</div>
+</div>
+<a id="a117364e1794475deb0bbdfdfeb574007" name="a117364e1794475deb0bbdfdfeb574007"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117364e1794475deb0bbdfdfeb574007">&#9670;&#160;</a></span>error()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Logger::error </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>error 日志 </p>
+
+</div>
+</div>
+<a id="aa35850b113ca87a126dd0b1a0d5c9b0a" name="aa35850b113ca87a126dd0b1a0d5c9b0a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa35850b113ca87a126dd0b1a0d5c9b0a">&#9670;&#160;</a></span>flush()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Logger::flush </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>手动 flush </p>
+
+</div>
+</div>
+<a id="a39bd25f673c7c398446499a18fb5645a" name="a39bd25f673c7c398446499a18fb5645a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a39bd25f673c7c398446499a18fb5645a">&#9670;&#160;</a></span>info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Logger::info </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>单行 info 日志 </p>
+
+</div>
+</div>
+<a id="a32a85566d09b6ddfd07a4c4ff02d5ac4" name="a32a85566d09b6ddfd07a4c4ff02d5ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32a85566d09b6ddfd07a4c4ff02d5ac4">&#9670;&#160;</a></span>init()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Logger::init </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8f">Level</a>&#160;</td>
+          <td class="paramname"><em>level</em> = <code><a class="el" href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8fa4059b0251f66a18cb56f544728796875">Level::Info</a></code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>also_stdout</em> = <code>true</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>初始化：指定文件名、最小输出级别、是否同时输出到 stdout </p>
+
+</div>
+</div>
+<a id="a57acd0f5576b2f784d3c42a6e99c230b" name="a57acd0f5576b2f784d3c42a6e99c230b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a57acd0f5576b2f784d3c42a6e99c230b">&#9670;&#160;</a></span>setLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Logger::setLevel </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../db/d67/classLogger.html#ad766a24576ea8b27ad9d5649cef46d8f">Level</a>&#160;</td>
+          <td class="paramname"><em>level</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>改变最低输出级别 </p>
+
+</div>
+</div>
+<a id="a173c0d18abc45e27fad414054dfc5f5f" name="a173c0d18abc45e27fad414054dfc5f5f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a173c0d18abc45e27fad414054dfc5f5f">&#9670;&#160;</a></span>warn()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void Logger::warn </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>warning 日志 </p>
+
+</div>
+</div>
+<hr/>该类的文档由以下文件生成:<ul>
+<li>include/<a class="el" href="../../d6/da3/logger_8hpp_source.html">logger.hpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+    </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script>

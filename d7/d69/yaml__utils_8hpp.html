@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>C_KMHD_CODE: include/yaml_utils.hpp 文件参考</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+<link href="../../doxygen-style.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">C_KMHD_CODE<span id="projectnumber">&#160;V1.0</span>
+   </div>
+   <div id="projectbrief">C_KMHD_CODE is a library for the KMHD code.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "../../search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('../../',true,false,'search.php','搜索');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('d7/d69/yaml__utils_8hpp.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">载入中...</div>
+<div class="SRStatus" id="Searching">搜索中...</div>
+<div class="SRStatus" id="NoMatches">未找到</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#namespaces">命名空间</a> &#124;
+<a href="#func-members">函数</a>  </div>
+  <div class="headertitle"><div class="title">yaml_utils.hpp 文件参考</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Helper functions for loading configuration values from YAML nodes into scalar values, Eigen-style vectors, std::array, and matrices.  
+<a href="#details">更多...</a></p>
+<div class="textblock"><code>#include &lt;yaml-cpp/yaml.h&gt;</code><br />
+<code>#include &lt;algorithm&gt;</code><br />
+<code>#include &lt;array&gt;</code><br />
+<code>#include &lt;cstddef&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+</div>
+<p><a href="../../d7/d69/yaml__utils_8hpp_source.html">浏览源代码.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="namespaces" name="namespaces"></a>
+命名空间</h2></td></tr>
+<tr class="memitem:d1/d93/namespaceyaml__utils" id="r_d1/d93/namespaceyaml__utils"><td class="memItemLeft" align="right" valign="top">namespace &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d93/namespaceyaml__utils.html">yaml_utils</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+函数</h2></td></tr>
+<tr class="memitem:af1ccea63cafd2d2d4665fe224938c592" id="r_af1ccea63cafd2d2d4665fe224938c592"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:af1ccea63cafd2d2d4665fe224938c592"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d93/namespaceyaml__utils.html#af1ccea63cafd2d2d4665fe224938c592">yaml_utils::load_optional</a> (const YAML::Node &amp;n, const char *key, T &amp;dst)</td></tr>
+<tr class="memdesc:af1ccea63cafd2d2d4665fe224938c592"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an optional scalar value from a YAML mapping node.  <br /></td></tr>
+<tr class="separator:af1ccea63cafd2d2d4665fe224938c592"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebae55033e880b1be2d7d4b7d5fb54f4" id="r_aebae55033e880b1be2d7d4b7d5fb54f4"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:aebae55033e880b1be2d7d4b7d5fb54f4"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d93/namespaceyaml__utils.html#aebae55033e880b1be2d7d4b7d5fb54f4">yaml_utils::load_required</a> (const YAML::Node &amp;n, const char *key, T &amp;dst)</td></tr>
+<tr class="memdesc:aebae55033e880b1be2d7d4b7d5fb54f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a required scalar value from a YAML mapping node.  <br /></td></tr>
+<tr class="separator:aebae55033e880b1be2d7d4b7d5fb54f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71c533e7ebaf3605c8b21b4471860b6d" id="r_a71c533e7ebaf3605c8b21b4471860b6d"><td class="memTemplParams" colspan="2">template&lt;typename Vec &gt; </td></tr>
+<tr class="memitem:a71c533e7ebaf3605c8b21b4471860b6d"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d93/namespaceyaml__utils.html#a71c533e7ebaf3605c8b21b4471860b6d">yaml_utils::load_vector_optional</a> (const YAML::Node &amp;n, const char *key, Vec &amp;v)</td></tr>
+<tr class="memdesc:a71c533e7ebaf3605c8b21b4471860b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an optional sparse Eigen-style vector from a YAML mapping.  <br /></td></tr>
+<tr class="separator:a71c533e7ebaf3605c8b21b4471860b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06cd41ee5dc967b58d2f764c4aa27d14" id="r_a06cd41ee5dc967b58d2f764c4aa27d14"><td class="memTemplParams" colspan="2">template&lt;typename T , std::size_t N&gt; </td></tr>
+<tr class="memitem:a06cd41ee5dc967b58d2f764c4aa27d14"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d93/namespaceyaml__utils.html#a06cd41ee5dc967b58d2f764c4aa27d14">yaml_utils::load_vector_optional</a> (const YAML::Node &amp;n, const char *key, std::array&lt; T, N &gt; &amp;v)</td></tr>
+<tr class="memdesc:a06cd41ee5dc967b58d2f764c4aa27d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an optional sparse std::array from a YAML mapping.  <br /></td></tr>
+<tr class="separator:a06cd41ee5dc967b58d2f764c4aa27d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2ac4f9844963c7209fd9834eafdd0076" id="r_a2ac4f9844963c7209fd9834eafdd0076"><td class="memTemplParams" colspan="2">template&lt;typename Mat &gt; </td></tr>
+<tr class="memitem:a2ac4f9844963c7209fd9834eafdd0076"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d93/namespaceyaml__utils.html#a2ac4f9844963c7209fd9834eafdd0076">yaml_utils::load_matrix_columns_optional</a> (const YAML::Node &amp;n, const char *key, Mat &amp;M)</td></tr>
+<tr class="memdesc:a2ac4f9844963c7209fd9834eafdd0076"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an optional matrix from YAML by specifying whole columns.  <br /></td></tr>
+<tr class="separator:a2ac4f9844963c7209fd9834eafdd0076"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e61fbe91835317ff58be35bac70a656" id="r_a7e61fbe91835317ff58be35bac70a656"><td class="memTemplParams" colspan="2">template&lt;typename Mat &gt; </td></tr>
+<tr class="memitem:a7e61fbe91835317ff58be35bac70a656"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d1/d93/namespaceyaml__utils.html#a7e61fbe91835317ff58be35bac70a656">yaml_utils::load_matrix_rows_optional</a> (const YAML::Node &amp;n, const char *key, Mat &amp;M)</td></tr>
+<tr class="memdesc:a7e61fbe91835317ff58be35bac70a656"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an optional matrix from YAML by specifying whole rows.  <br /></td></tr>
+<tr class="separator:a7e61fbe91835317ff58be35bac70a656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8018c13983ed49b42a905fbefd2af8" id="r_afe8018c13983ed49b42a905fbefd2af8"><td class="memItemLeft" align="right" valign="top">YAML::Node&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d93/namespaceyaml__utils.html#afe8018c13983ed49b42a905fbefd2af8">yaml_utils::load_yaml_file</a> (const std::string &amp;path)</td></tr>
+<tr class="memdesc:afe8018c13983ed49b42a905fbefd2af8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load a YAML file from the given path.  <br /></td></tr>
+<tr class="separator:afe8018c13983ed49b42a905fbefd2af8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
+<div class="textblock"><p>Helper functions for loading configuration values from YAML nodes into scalar values, Eigen-style vectors, std::array, and matrices. </p>
+</div></div><!-- contents -->
+</div><!-- doc-content -->
+<script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+    </script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.min.js"></script>
